@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+        <fieldset>
+                <field
+                        name="id"
+                        type="hidden"
+                />
+                <field
+                        name="title"
+                        type="text"
+                        label="title"
+                        description="title_desc"
+                        size="40"
+                        class="inputbox"
+                        default=""
+                />
+				<field
+                        name="link"
+                        type="text"
+                        label="link"
+                        description="link_desc"
+                        size="40"
+                        class="inputbox"
+                        default=""
+                />
+				<field
+                        name="desc"
+                        type="textarea"
+                        label="Description"
+                        description="description_desc"
+                        size="40"
+                        class="inputbox"
+                        default=""
+                />
+				<field
+                        name="cat_id"
+                        type="contentcategory"
+                        label="Category"
+                        description="cat_desc"
+                        class="inputbox"
+                        default=""
+                />
+				<field
+                        name="nums"
+                        type="text"
+						minimum="0"
+						maximum="999"
+                        label="Number of Items"
+                        description="nums_desc"
+                        class="inputbox"
+                        default=""
+                />
+        </fieldset>
+</form>

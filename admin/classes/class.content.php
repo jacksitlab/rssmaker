@@ -42,6 +42,7 @@ class Content
 		'WHERE catid = '.$cat_id.' '.
 		'AND publish_up<=CURRENT_TIMESTAMP '.
 		'AND (CURRENT_TIMESTAMP<=publish_down OR publish_down=\'0000-00-00 00:00:00\') '.
+		'AND STATUS = 1 '.
 		'ORDER BY '.$orderby;
 		if($num>0)
 		$query.=' LIMIT '.$num;	
